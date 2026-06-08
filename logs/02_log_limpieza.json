@@ -1,0 +1,70 @@
+{
+  "proyecto": "San Juan Energy Gap",
+  "script": "02_limpieza.py",
+  "fecha": "2026-06-02T03:29:45.401456",
+  "decisiones": [
+    {
+      "descripcion": "Carga con header=3 (fila 3 del Excel es el encabezado real)",
+      "detalle": "Shape resultante: (173, 25)"
+    },
+    {
+      "descripcion": "Columnas renombradas a snake_case y años a string entero"
+    },
+    {
+      "descripcion": "Forward-fill aplicado a 'categoria' y 'subcategoria'",
+      "detalle": "Necesario porque el Excel usa celdas combinadas (merged cells)"
+    },
+    {
+      "descripcion": "Eliminadas 7 filas sin nombre de variable",
+      "detalle": "Corresponden a filas vacías o separadores del Excel"
+    },
+    {
+      "descripcion": "Strip aplicado a columnas de texto"
+    },
+    {
+      "descripcion": "Catálogo de variables guardado en data/clean/variables_referencia.csv"
+    },
+    {
+      "descripcion": "Melt aplicado: formato ancho → largo",
+      "detalle": "Shape final: (3486, 6), años: [np.int64(2005), np.int64(2006), np.int64(2007), np.int64(2008), np.int64(2009), np.int64(2010), np.int64(2011), np.int64(2012), np.int64(2013), np.int64(2014), np.int64(2015), np.int64(2016), np.int64(2017), np.int64(2018), np.int64(2019), np.int64(2020), np.int64(2021), np.int64(2022), np.int64(2023), np.int64(2024), np.int64(2025)]"
+    }
+  ],
+  "shape_final": {
+    "filas": 3486,
+    "columnas": 6
+  },
+  "anios": [
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "n_variables": 99,
+  "categorias": [
+    "COMBUSTIBLES",
+    "DEMANDA",
+    "EMISIONES",
+    "INTERCAMBIOS",
+    "OFERTA\npor tecnología",
+    "POTENCIA INSTALADA\n(*)",
+    "VARIABLES\nNO MEM",
+    "VARIABLES ECONÓMICAS"
+  ]
+}

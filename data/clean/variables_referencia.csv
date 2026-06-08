@@ -1,0 +1,246 @@
+categoria,subcategoria,variable,unidad
+DEMANDA,,Demanda Residencial,[GWh]
+DEMANDA,,Demanda Comercial,[GWh]
+DEMANDA,,Gran Usuario en Distribuidor,[GWh]
+DEMANDA,DEMANDA,Gran Usuario MEM,[GWh]
+DEMANDA,DEMANDA,Gran Demanda Industrial/Comercial,[GWh]
+DEMANDA,Valores físicos,DEMANDA LOCAL,[GWh]
+DEMANDA,[GWh],Exportación total,[GWh]
+DEMANDA,[GWh],Bombeo,[GWh]
+DEMANDA,[GWh],Pérdidas,[GWh]
+DEMANDA,[GWh],DEMANDA TOTAL,[GWh]
+DEMANDA,Pot máxima,POTENCIA MÁX,[MW]
+DEMANDA,Factor de carga,FACTOR DE CARGA,[%]
+DEMANDA,Factor de carga,Demanda Residencial,[%]
+DEMANDA,Factor de carga,Demanda Comercial,[%]
+DEMANDA,DEMANDA,Gran Usuario en Distribuidor,[%]
+DEMANDA,DEMANDA,Gran Usuario MEM,[%]
+DEMANDA,Participación [%],Gran Demanda Industrial/Comercial,[%]
+DEMANDA,Participación [%],DEMANDA LOCAL,[%]
+DEMANDA,Participación [%],Exportación total,[%]
+DEMANDA,Participación [%],Bombeo,[%]
+DEMANDA,Participación [%],Pérdidas,[%]
+"POTENCIA INSTALADA
+(*)",Participación [%],Comahue,[MW]
+"POTENCIA INSTALADA
+(*)",Participación [%],Salto Grande,[MW]
+"POTENCIA INSTALADA
+(*)",Participación [%],Yacyretá (******),[MW]
+"POTENCIA INSTALADA
+(*)",Participación [%],Resto,[MW]
+"POTENCIA INSTALADA
+(*)",Participación [%],Hidráulica Renovable HI > 50 MW (*****),[MW]
+"POTENCIA INSTALADA
+(*)",Participación [%],Ciclos Combinados,[MW]
+"POTENCIA INSTALADA
+(*)",POTENCIA,Turbina a gas,[MW]
+"POTENCIA INSTALADA
+(*)",INSTALADA,Turbovapor,[MW]
+"POTENCIA INSTALADA
+(*)",INSTALADA,Motor Diesel,[MW]
+"POTENCIA INSTALADA
+(*)",INSTALADA,Térmica,[MW]
+"POTENCIA INSTALADA
+(*)",Valores físicos,Nuclear,[MW]
+"POTENCIA INSTALADA
+(*)",[MW],Eólica,[MW]
+"POTENCIA INSTALADA
+(*)",[MW],Biogas,[MW]
+"POTENCIA INSTALADA
+(*)",[MW],Biomasa,[MW]
+"POTENCIA INSTALADA
+(*)",[MW],Solar,[MW]
+"POTENCIA INSTALADA
+(*)",[MW],Hidráulica Renovable HI <= 50 MW,[MW]
+"POTENCIA INSTALADA
+(*)",[MW],Renovable Ley 26190,[MW]
+"POTENCIA INSTALADA
+(*)",[MW],POTENCIA INSTALADA TOTAL,[MW]
+"POTENCIA INSTALADA
+(*)",[MW],Comahue,[%]
+"POTENCIA INSTALADA
+(*)",[MW],Salto Grande,[%]
+"POTENCIA INSTALADA
+(*)",[MW],Yacyretá,[%]
+"POTENCIA INSTALADA
+(*)",[MW],Resto,[%]
+"POTENCIA INSTALADA
+(*)",[MW],Hidráulica Renovable HI > 50 MW (*****),[%]
+"POTENCIA INSTALADA
+(*)",[MW],Ciclos Combinados,[%]
+"POTENCIA INSTALADA
+(*)",POTENCIA,Turbina a gas,[%]
+"POTENCIA INSTALADA
+(*)",INSTALADA,Turbovapor,[%]
+"POTENCIA INSTALADA
+(*)",INSTALADA,Motor Diesel,[%]
+"POTENCIA INSTALADA
+(*)",INSTALADA,Térmica,[%]
+"POTENCIA INSTALADA
+(*)",Participación [%],Nuclear,[%]
+"POTENCIA INSTALADA
+(*)",Participación [%],Eólica,[%]
+"POTENCIA INSTALADA
+(*)",Participación [%],Biogas,[%]
+"POTENCIA INSTALADA
+(*)",Participación [%],Biomasa,[%]
+"POTENCIA INSTALADA
+(*)",Participación [%],Solar,[%]
+"POTENCIA INSTALADA
+(*)",Participación [%],Hidráulica Renovable HI <= 50 MW,[%]
+"POTENCIA INSTALADA
+(*)",Participación [%],Renovable Ley 26190,[%]
+"POTENCIA INSTALADA
+(*)",Participación [%],POTENCIA INSTALADA TOTAL,[MW]
+"OFERTA
+por tecnología",Participación [%],Comahue,[GWh]
+"OFERTA
+por tecnología",Participación [%],Salto Grande,[GWh]
+"OFERTA
+por tecnología",Participación [%],Yacyretá,[GWh]
+"OFERTA
+por tecnología",Participación [%],Resto,[GWh]
+"OFERTA
+por tecnología",Participación [%],Hidráulica Renovable HI > 50 MW (*****),[GWh]
+"OFERTA
+por tecnología",Participación [%],Ciclos Combinados,[GWh]
+"OFERTA
+por tecnología",OFERTA,Turbina a gas,[GWh]
+"OFERTA
+por tecnología",OFERTA,Turbovapor,[GWh]
+"OFERTA
+por tecnología",Valores físicos,Motor Diesel,[GWh]
+"OFERTA
+por tecnología",[GWh],Térmica,[GWh]
+"OFERTA
+por tecnología",[GWh],Nuclear,[GWh]
+"OFERTA
+por tecnología",[GWh],Eólica,[GWh]
+"OFERTA
+por tecnología",[GWh],Biogas,[GWh]
+"OFERTA
+por tecnología",[GWh],Biomasa,[GWh]
+"OFERTA
+por tecnología",[GWh],Solar,[GWh]
+"OFERTA
+por tecnología",[GWh],Hidráulica Renovable HI <= 50 MW,[GWh]
+"OFERTA
+por tecnología",[GWh],Renovable Ley 26190,[GWh]
+"OFERTA
+por tecnología",[GWh],Importación,[GWh]
+"OFERTA
+por tecnología",[GWh],OFERTA TOTAL,[GWh]
+"OFERTA
+por tecnología",[GWh],Comahue,[%]
+"OFERTA
+por tecnología",[GWh],Salto Grande,[%]
+"OFERTA
+por tecnología",[GWh],Yacyretá,[%]
+"OFERTA
+por tecnología",[GWh],Resto,[%]
+"OFERTA
+por tecnología",[GWh],Hidráulica Renovable HI > 50 MW (*****),[%]
+"OFERTA
+por tecnología",[GWh],Ciclos Combinados,[%]
+"OFERTA
+por tecnología",[GWh],Turbina a gas,[%]
+"OFERTA
+por tecnología",OFERTA,Turbovapor,[%]
+"OFERTA
+por tecnología",OFERTA,Motor Diesel,[%]
+"OFERTA
+por tecnología",OFERTA,Térmica,[%]
+"OFERTA
+por tecnología",Participación [%],Nuclear,[%]
+"OFERTA
+por tecnología",Participación [%],Eólica,[%]
+"OFERTA
+por tecnología",Participación [%],Biogas,[%]
+"OFERTA
+por tecnología",Participación [%],Biomasa,[%]
+"OFERTA
+por tecnología",Participación [%],Solar,[%]
+"OFERTA
+por tecnología",Participación [%],Hidráulica Renovable HI <= 50 MW,[%]
+"OFERTA
+por tecnología",Participación [%],Renovable Ley 26190,[%]
+"OFERTA
+por tecnología",Participación [%],Importación,[%]
+"OFERTA
+por tecnología",Participación [%],OFERTA TOTAL,[%]
+"OFERTA
+por tecnología",% COBERTURA,% Cobertura Renovable / Demanda,[%]
+COMBUSTIBLES,% COBERTURA,GAS NATURAL,[mdam3]
+COMBUSTIBLES,% COBERTURA,GAS OIL,[mm3]
+COMBUSTIBLES,% COBERTURA,FUEL OIL,[kTon]
+COMBUSTIBLES,% COBERTURA,CARBÓN,[kTon]
+COMBUSTIBLES,CONSUMO DE,BIODIESEL,[kTon]
+COMBUSTIBLES,COMBUSTIBLES,GAS NATURAL (Gas Eq),[Mm3/d]
+COMBUSTIBLES,COMBUSTIBLES,GAS OIL (Gas Eq),[Mm3/d]
+COMBUSTIBLES,Valores físicos,FUEL OIL (Gas Eq),[Mm3/d]
+COMBUSTIBLES,Valores físicos,CARBÓN (Gas Eq),[Mm3/d]
+COMBUSTIBLES,Valores físicos,BIODIESEL (Gas Eq),[Mm3/d]
+COMBUSTIBLES,Valores físicos,COMBUSTIBLES TOTAL (gas eq),[Mm3/d]
+COMBUSTIBLES,Consumo de,GAS NATURAL,[%]
+COMBUSTIBLES,Combustibles,GAS OIL,[%]
+COMBUSTIBLES,Combustibles,FUEL OIL,[%]
+COMBUSTIBLES,Participación [%],CARBÓN,[%]
+COMBUSTIBLES,Participación [%],BIODIESEL,[%]
+COMBUSTIBLES,Participación [%],Energía generada con GAS NATURAL,[GWh]
+COMBUSTIBLES,Energía generada,Energía generada con GAS OIL,[GWh]
+COMBUSTIBLES,por tipo de,Energía generada con FUEL OIL,[GWh]
+COMBUSTIBLES,Combustible,Energía generada con CARBÓN,[GWh]
+COMBUSTIBLES,Combustible,Energía generada con BIODIESEL,[GWh]
+COMBUSTIBLES,Combustible,E. Térmica asociada al uso de combustible,[GWh]
+COMBUSTIBLES,Combustible,CEM GAS NATURAL,[Kcal/KWh]
+COMBUSTIBLES,CONSUMO,CEM GAS OIL,[Kcal/KWh]
+COMBUSTIBLES,ESPECÍFICO,CEM FUEL OIL,[Kcal/KWh]
+COMBUSTIBLES,MEDIO,CEM CARBÓN,[Kcal/KWh]
+COMBUSTIBLES,MEDIO,CEM BIODIESEL,[Kcal/KWh]
+COMBUSTIBLES,MEDIO,CEM TOTAL,[Kcal/KWh]
+EMISIONES,MEDIO,Emisiones CO2 - GAS NATURAL,[MM ton CO2]
+EMISIONES,EMISIONES CO2,Emisiones CO2 - GAS OIL,[MM ton CO2]
+EMISIONES,TOTALES,Emisiones CO2 - FUEL OIL,[MM ton CO2]
+EMISIONES,TOTALES,Emisiones CO2 - CARBÓN,[MM ton CO2]
+EMISIONES,TOTALES,Emisiones - Energía Térmica,[MM ton CO2]
+EMISIONES,TOTALES,Emisiones unit GAS NATURAL,[ton CO2/MWh]
+EMISIONES,EMISIONES CO2,Emisiones unit GAS OIL,[ton CO2/MWh]
+EMISIONES,UNITARIAS,Emisiones unit FUEL OIL,[ton CO2/MWh]
+EMISIONES,UNITARIAS,Emisiones unit CARBÓN,[ton CO2/MWh]
+EMISIONES,UNITARIAS,Emisiones unit  Gen Térmica,[ton CO2/MWh]
+EMISIONES,UNITARIAS,Emisiones unit  Oferta Total,[ton CO2/MWh]
+INTERCAMBIOS,UNITARIAS,IMP Brasil,[GWh]
+INTERCAMBIOS,UNITARIAS,IMP Paraguay,[GWh]
+INTERCAMBIOS,UNITARIAS,IMP Uruguay,[GWh]
+INTERCAMBIOS,UNITARIAS,IMP Chile,[GWh]
+INTERCAMBIOS,INTERCAMBIOS,IMP Bolivia,[GWh]
+INTERCAMBIOS,INTERNACIONALES,TOTAL IMPORTACIÓN,[GWh]
+INTERCAMBIOS,INTERNACIONALES,EXP Brasil,[GWh]
+INTERCAMBIOS,INTERNACIONALES,EXP Paraguay,[GWh]
+INTERCAMBIOS,INTERNACIONALES,EXP Uruguay,[GWh]
+INTERCAMBIOS,INTERNACIONALES,EXP Chile,[GWh]
+INTERCAMBIOS,INTERNACIONALES,Exp Bolivia,[GWh]
+INTERCAMBIOS,INTERNACIONALES,TOTAL EXPORTACIÓN,[GWh]
+VARIABLES ECONÓMICAS,INTERNACIONALES,Energía* [$Ar],[$/MWh]
+VARIABLES ECONÓMICAS,INTERNACIONALES,Potencia** [$Ar],[$/MWh]
+VARIABLES ECONÓMICAS,PRECIO MEDIO,Servicios [$Ar],[$/MWh]
+VARIABLES ECONÓMICAS,Anual Ponderado,Transporte [$Ar],[$/MWh]
+VARIABLES ECONÓMICAS,[$Ar],TOTAL [$Ar],[$/MWh]
+VARIABLES ECONÓMICAS,[$Ar],Precio Estacional (Ener +Pot+Transp.) [$Ar] + Cargos GUDI,[$/MWh]
+VARIABLES ECONÓMICAS,CMO [$Ar],Costo Marginal Operado Medio [$Ar],[$/MWh]
+VARIABLES ECONÓMICAS,CMO [$Ar],Energía* [u$s],[u$s/MWh]
+VARIABLES ECONÓMICAS,CMO [$Ar],Potencia** [u$s],[u$s/MWh]
+VARIABLES ECONÓMICAS,PRECIO MEDIO,Servicios [u$s],[u$s/MWh]
+VARIABLES ECONÓMICAS,Anual Ponderado,Transporte [u$s],[u$s/MWh]
+VARIABLES ECONÓMICAS,[u$s],Monómico TOTAL [u$s],[u$s/MWh]
+VARIABLES ECONÓMICAS,[u$s],Monómico Estacional (Ener +Pot+Transp.) [u$s],[u$s/MWh]
+VARIABLES ECONÓMICAS,CMO [u$s],Costo Marginal Operado Medio [u$s],[u$s/MWh]
+VARIABLES ECONÓMICAS,% Cobertura,% Cobertura Monómico Estacional / Total,[%]
+"VARIABLES
+NO MEM",% Cobertura,Tasa de Cambio,[$ar/usd]
+"VARIABLES
+NO MEM",Variables NO MEM,Barril de petróleo,[U$s / barril Brent]
+"VARIABLES
+NO MEM",Variables NO MEM,TEMPERATURA MEDIA,[°C]
+"VARIABLES
+NO MEM",Variables NO MEM,Cant de días,

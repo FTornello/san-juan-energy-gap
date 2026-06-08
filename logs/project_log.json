@@ -1,0 +1,141 @@
+{
+  "proyecto": "San Juan Energy Gap — Can the Grid Support the Mining Boom?",
+  "fecha_inicio": "2026-06-02",
+  "fecha_cierre": "2026-06-08",
+  "estado": "Completo",
+  "autor": "Francisco Tornello",
+  "tesis": "La infraestructura eléctrica de San Juan no puede absorber la demanda proyectada del clúster minero del norte provincial, que supera 2.7× la demanda provincial actual. No existe un plan coordinado de infraestructura para cubrir la brecha.",
+  "hallazgos_clave": {
+    "potencia_argentina_2005_mw": 24124,
+    "potencia_argentina_2025_mw": 44058,
+    "crecimiento_potencia_pct": 83,
+    "demanda_san_juan_pico_mw": 551,
+    "demanda_san_juan_fuente": "EPRE San Juan, Anuario 2021 (Potencia Operada máxima)",
+    "generacion_san_juan_instalada_mw": 861,
+    "generacion_san_juan_composicion": "70% solar, 27% hidro, 3% térmica",
+    "generacion_san_juan_firme_mw": 258,
+    "generacion_san_juan_fuente": "EPSE San Juan, feb. 2025",
+    "generacion_san_juan_nota": "Provincia exportadora neta al mediodía; el cuello de botella es transmisión/coordinación, no falta de generación",
+    "linea_norte": "Línea San Juan–Rodeo: diseñada para 500 kV, opera a 132 kV; energizarla a 500 kV es el objeto del conflicto regulatorio (ENRE Res. 79/2026)",
+    "proyectos_mineros": {
+      "josemaria_mw": 260,
+      "josemaria_fuente": "ENRE Res. 79/2026 (fuente primaria)",
+      "los_azules_mw": 119,
+      "los_azules_fuente": "McEwen Copper NI 43-101, nov. 2025 (fuente primaria)",
+      "el_pachon_mw_estimado": 600,
+      "el_pachon_fuente": "Estimación por benchmark (185 kt/día, alta altitud; factibilidad no publicada)",
+      "suma_tres_proyectos_mw": 979,
+      "total_cluster_mw": 1500,
+      "total_cluster_fuente": "CEO Glencore Argentina, Expo Minera SJ, mayo 2026 (incluye Filo del Sol + expansiones)"
+    },
+    "brecha_sin_plan_mw": 1240,
+    "brecha_nota": "Demanda del clúster (>1.500 MW) menos la única capacidad con plan de transmisión (Josemaría 260 MW, ENRE Res. 79/2026)"
+  },
+  "fuentes_datos": [
+    {
+      "nombre": "CAMMESA Open Data — potencia_instalada.csv",
+      "cobertura": "2015–2020",
+      "uso": "Exploración regional (CUYO), grandes usuarios San Juan"
+    },
+    {
+      "nombre": "CAMMESA Estadísticas Anuales 2005–2025 (Excel)",
+      "cobertura": "2005–2025",
+      "uso": "Análisis de la matriz nacional — base del análisis histórico"
+    },
+    {
+      "nombre": "ENRE Resoluciones 79, 165 y 214/2026",
+      "cobertura": "Feb–Abr 2026",
+      "uso": "Caso regulatorio línea 500kV"
+    },
+    {
+      "nombre": "McEwen Copper NI 43-101 (nov. 2025)",
+      "cobertura": "Oct–Nov 2025",
+      "uso": "Demanda eléctrica Los Azules: 119 MW"
+    },
+    {
+      "nombre": "CEO Glencore Argentina — Expo Minera SJ",
+      "cobertura": "Mayo 2026",
+      "uso": "Total >1.500 MW / crítica al modelo fragmentado"
+    }
+  ],
+  "scripts": [
+    {
+      "nombre": "00a_diagrama_sistema.py",
+      "estado": "✅ completo"
+    },
+    {
+      "nombre": "00b_mapa_institucional.py",
+      "estado": "✅ completo"
+    },
+    {
+      "nombre": "00c_matriz_generacion_sanjuan.py",
+      "estado": "✅ completo"
+    },
+    {
+      "nombre": "00d_curva_pato.py",
+      "estado": "✅ completo"
+    },
+    {
+      "nombre": "00e_mapa_geografico.py",
+      "estado": "✅ completo"
+    },
+    {
+      "nombre": "01a_descarga_exploracion.py",
+      "estado": "✅ completo"
+    },
+    {
+      "nombre": "01b_explorar_excel.py",
+      "estado": "✅ completo"
+    },
+    {
+      "nombre": "02_limpieza.py",
+      "estado": "✅ completo"
+    },
+    {
+      "nombre": "03_eda_nacional.py",
+      "estado": "✅ completo"
+    },
+    {
+      "nombre": "04_analisis_san_juan.py",
+      "estado": "✅ completo"
+    },
+    {
+      "nombre": "05_caso_500kv.py",
+      "estado": "✅ completo"
+    },
+    {
+      "nombre": "06_readme_log.py",
+      "estado": "✅ completo"
+    },
+    {
+      "nombre": "07_proyeccion_demanda.py",
+      "estado": "✅ completo"
+    }
+  ],
+  "graficos": [
+    "00_01_flujo_sistema_electrico.png",
+    "00_02_mapa_institucional.png",
+    "00_03_matriz_generacion_sanjuan.png",
+    "00_04_curva_pato.png",
+    "00_05_mapa_geografico.png",
+    "03_01_potencia_instalada_evolucion.png",
+    "03_02_composicion_2005_vs_2025.png",
+    "03_03_crecimiento_renovable.png",
+    "03_04_demanda_potencia_max.png",
+    "04_01_gap_analysis_san_juan.png",
+    "04_02_proporcion_minera_provincial.png",
+    "05_01_timeline_regulatorio.png",
+    "05_02_modelo_fragmentado_vs_coordinado.png",
+    "05_03_fragmentacion_infraestructura.png",
+    "07_01_proyeccion_demanda_base.png",
+    "07_02_sensibilidad_pachon.png"
+  ],
+  "tech_stack": [
+    "Python 3.13",
+    "pandas",
+    "matplotlib",
+    "openpyxl",
+    "numpy"
+  ],
+  "notas": "Los datos de demanda minera provienen de fuentes primarias auditadas (ENRE, NI 43-101) más una estimación por benchmark para El Pachón, cuyo estudio de factibilidad aún no es público. La estimación de ~600 MW se deriva del throughput declarado (185.000 t/día) a alta altitud, comparado con proyectos andinos similares (QB2, Quellaveco). El total del clúster (>1.500 MW) es la cifra confirmada por el CEO de Glencore Argentina e incluye Filo del Sol y expansiones además de los tres proyectos principales. Los CSV de CAMMESA solo llegan a 2020; los datos 2020–2025 vienen del Excel del Informe Anual 2025."
+}

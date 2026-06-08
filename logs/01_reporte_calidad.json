@@ -1,0 +1,366 @@
+{
+  "potencia_instalada": {
+    "nombre": "potencia_instalada",
+    "filas": 15793,
+    "columnas": 16,
+    "duplicados": 0,
+    "columnas_detalle": [
+      {
+        "nombre": "id",
+        "tipo": "int64",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 15793,
+        "muestra": "2"
+      },
+      {
+        "nombre": "periodo",
+        "tipo": "str",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 47,
+        "muestra": "2015-10-01 00:00:00"
+      },
+      {
+        "nombre": "central",
+        "tipo": "str",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 359,
+        "muestra": "ABRO"
+      },
+      {
+        "nombre": "agente",
+        "tipo": "str",
+        "nulos": 4,
+        "pct_nulos": 0.0,
+        "unicos": 333,
+        "muestra": "CTBROWNG"
+      },
+      {
+        "nombre": "agente_descripcion",
+        "tipo": "str",
+        "nulos": 4,
+        "pct_nulos": 0.0,
+        "unicos": 352,
+        "muestra": "C.T. ALMIRANTE BROWN"
+      },
+      {
+        "nombre": "region",
+        "tipo": "str",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 11,
+        "muestra": "GRAN BS.AS."
+      },
+      {
+        "nombre": "categoria_region",
+        "tipo": "str",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 8,
+        "muestra": "Gba - Litoral - Buenos Aires"
+      },
+      {
+        "nombre": "tipo_maquina",
+        "tipo": "str",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 13,
+        "muestra": "DI"
+      },
+      {
+        "nombre": "fuente_generacion",
+        "tipo": "str",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 4,
+        "muestra": "Térmica"
+      },
+      {
+        "nombre": "tecnologia",
+        "tipo": "str",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 12,
+        "muestra": "Motor Diesel"
+      },
+      {
+        "nombre": "potencia_instalada_mw",
+        "tipo": "float64",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 369,
+        "muestra": "25.0"
+      },
+      {
+        "nombre": "fecha_proceso",
+        "tipo": "str",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 50,
+        "muestra": "2018-10-08 15:47:17.851306"
+      },
+      {
+        "nombre": "lote_id_log",
+        "tipo": "int64",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 50,
+        "muestra": "4"
+      },
+      {
+        "nombre": "mes",
+        "tipo": "int64",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 12,
+        "muestra": "10"
+      },
+      {
+        "nombre": "indice_tiempo",
+        "tipo": "str",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 47,
+        "muestra": "2015-10"
+      },
+      {
+        "nombre": "anio",
+        "tipo": "int64",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 6,
+        "muestra": "2015"
+      }
+    ]
+  },
+  "demanda": {
+    "nombre": "demanda",
+    "filas": 40388,
+    "columnas": 16,
+    "duplicados": 0,
+    "columnas_detalle": [
+      {
+        "nombre": "id",
+        "tipo": "int64",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 40388,
+        "muestra": "699232"
+      },
+      {
+        "nombre": "anio",
+        "tipo": "int64",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 4,
+        "muestra": "2017"
+      },
+      {
+        "nombre": "mes",
+        "tipo": "int64",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 12,
+        "muestra": "1"
+      },
+      {
+        "nombre": "agente_nemo",
+        "tipo": "str",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 564,
+        "muestra": "AARGTAOY"
+      },
+      {
+        "nombre": "agente_descripcion",
+        "tipo": "str",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 560,
+        "muestra": "AEROP ARG 2000 - Aeroparque"
+      },
+      {
+        "nombre": "tipo_agente",
+        "tipo": "str",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 4,
+        "muestra": "GU"
+      },
+      {
+        "nombre": "region",
+        "tipo": "str",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 9,
+        "muestra": "GRAN BS.AS."
+      },
+      {
+        "nombre": "provincia",
+        "tipo": "str",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 22,
+        "muestra": "BUENOS AIRES"
+      },
+      {
+        "nombre": "categoria_area",
+        "tipo": "str",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 11,
+        "muestra": "Gran Usuario MEM"
+      },
+      {
+        "nombre": "categoria_demanda",
+        "tipo": "str",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 2,
+        "muestra": "Gran Usuario"
+      },
+      {
+        "nombre": "tarifa",
+        "tipo": "str",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 21,
+        "muestra": "GUMAS/AUTOGENERADORES"
+      },
+      {
+        "nombre": "categoria_tarifa",
+        "tipo": "str",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 4,
+        "muestra": "Industrial/Comercial Grande"
+      },
+      {
+        "nombre": "demanda_MWh",
+        "tipo": "float64",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 38291,
+        "muestra": "1990.439"
+      },
+      {
+        "nombre": "fecha_proceso",
+        "tipo": "str",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 1,
+        "muestra": "2020-05-05 11:06:49.000713"
+      },
+      {
+        "nombre": "lote_id_log",
+        "tipo": "int64",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 1,
+        "muestra": "67"
+      },
+      {
+        "nombre": "indice_tiempo",
+        "tipo": "str",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 38,
+        "muestra": "2017-01"
+      }
+    ]
+  },
+  "balance": {
+    "nombre": "balance",
+    "filas": 380,
+    "columnas": 9,
+    "duplicados": 0,
+    "columnas_detalle": [
+      {
+        "nombre": "id",
+        "tipo": "int64",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 380,
+        "muestra": "6272"
+      },
+      {
+        "nombre": "anio",
+        "tipo": "int64",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 4,
+        "muestra": "2017"
+      },
+      {
+        "nombre": "mes",
+        "tipo": "int64",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 12,
+        "muestra": "1"
+      },
+      {
+        "nombre": "balance",
+        "tipo": "str",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 2,
+        "muestra": "OFERTA"
+      },
+      {
+        "nombre": "tipo",
+        "tipo": "str",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 10,
+        "muestra": "Hidráulica"
+      },
+      {
+        "nombre": "energia_mwh",
+        "tipo": "float64",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 374,
+        "muestra": "3281399.106"
+      },
+      {
+        "nombre": "fecha_proceso",
+        "tipo": "str",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 1,
+        "muestra": "2020-05-05 11:07:24.323786"
+      },
+      {
+        "nombre": "lote_id_log",
+        "tipo": "int64",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 1,
+        "muestra": "67"
+      },
+      {
+        "nombre": "indice_tiempo",
+        "tipo": "str",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "unicos": 38,
+        "muestra": "2017-01"
+      }
+    ]
+  },
+  "_metadata": {
+    "proyecto": "San Juan Energy Gap — Can the Grid Support the Mining Boom?",
+    "script": "01_descarga_exploracion.py",
+    "fecha_ejecucion": "2026-06-02T03:17:23.837311",
+    "fuente": "CAMMESA Open Data — datos.energia.gob.ar",
+    "licencia": "Creative Commons Attribution",
+    "datasets_cargados": [
+      "potencia_instalada",
+      "demanda",
+      "balance"
+    ]
+  }
+}
