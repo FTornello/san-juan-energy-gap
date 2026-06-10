@@ -1,0 +1,88 @@
+{
+  "project": "san-juan-energy-gap",
+  "versions": [
+    {
+      "version": "1.0",
+      "date": "2026-06-07",
+      "commit": "0fa7891",
+      "description": "Initial commit: análisis completo v1.0",
+      "scripts": 13,
+      "figures": 16,
+      "notes": "Scripts 00a–07, reports 00_01–07_02"
+    },
+    {
+      "version": "3.1",
+      "date": "2026-06-10",
+      "description": "v3.1: correcciones auditoría + scripts 08/09/10",
+      "changes": [
+        "Script 08: escenario crecimiento alto (CAGR 2% y 3.75%)",
+        "Script 09: brecha firme día vs. noche — corrección factor 90% solo componente provincial",
+        "Script 10: escenario BESS — FC real 26.0% desde CAMMESA/EPSE",
+        "Figura 08_01: proyección CAGR alto",
+        "Figura 09_01: brecha día/noche",
+        "Figura 10_01: escenario BESS",
+        "Figura et_diagrama: diagrama sistema eléctrico (fondo)",
+        "Figura chile_renovables_timeline: timeline renovables Chile",
+        "Corrección 90%: déficit 2030 = 658.5 × 0.90 + 379.0 − 258.0 = 713.6 MW",
+        "Fuente COCHILCO: Tier 1 directo cochilco.cl",
+        "FC solar 26.0%: 1,372,040 MWh / (603 MW × 8,760 h)",
+        "project_log.json creado"
+      ],
+      "scripts": 16,
+      "figures": 21,
+      "key_outputs": {
+        "script_08": {
+          "2025": {
+            "CAGR_2pct": 596.4,
+            "CAGR_375pct": 638.4
+          },
+          "2030": {
+            "CAGR_2pct": 658.5,
+            "CAGR_375pct": 767.4
+          },
+          "2036": {
+            "CAGR_2pct": 741.6,
+            "CAGR_375pct": 957.1
+          }
+        },
+        "script_09": {
+          "2025": {
+            "prov_MW": 596.4,
+            "minera_MW": 0.0,
+            "total_MW": 596.4,
+            "deficit_MW": 338.4
+          },
+          "2030": {
+            "prov_MW": 658.5,
+            "minera_MW": 379.0,
+            "total_MW": 1037.5,
+            "deficit_MW": 779.5
+          },
+          "2036": {
+            "prov_MW": 741.6,
+            "minera_MW": 979.0,
+            "total_MW": 1720.6,
+            "deficit_MW": 1462.6
+          },
+          "sensitivity_90pct_2030": {
+            "formula": "658.5 × 0.90 + 379.0 − 258.0",
+            "result_MW": 713.6,
+            "note": "Factor 90% solo sobre componente provincial"
+          }
+        },
+        "script_10": {
+          "FC_real_pct": 26.0,
+          "FC_formula": "1,372,040 MWh / (603 MW × 8,760 h)",
+          "scenarios": {
+            "FC_22pct": 586,
+            "FC_25pct": 516,
+            "FC_26pct_CAMMESA": 497,
+            "FC_30pct": 430
+          },
+          "BESS_MWh": 1607,
+          "BESS_cost_USD_M": "450–514"
+        }
+      }
+    }
+  ]
+}
