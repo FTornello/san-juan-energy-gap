@@ -12,9 +12,11 @@ Este script no usa nuevas fuentes de datos — trabaja con los datos
 auditados en la investigación y los conecta con los gráficos anteriores.
 
 Fuentes documentadas:
-  - ENRE Res. 79/2026 (18 feb 2026): prioridad Vicuña 90%/25 años
-  - ENRE Res. 165/2026 y 214/2026 (abr 2026): corrección, excluye Filo del Sol
-  - Tiempo de San Juan, Econojournal, Diario de Cuyo — mar/abr/may 2026
+  - ENRE Res. 79/2026: prioridad Vicuña 90%/25 años
+  - ENRE Res. 214/2026 (B.O. 16 abr 2026): fe de erratas, corrige Res. 79 y 165, excluye Filo del Sol
+  - ENRE Res. 219/2026 (B.O. 24 abr 2026): convoca la audiencia pública del 3 jun 2026
+  - Audiencia 3 jun 2026: 13 expositores, sin fallo de fondo, prórroga 30 días a Vicuña (Tiempo de San Juan, Acero y Roca)
+  - Tiempo de San Juan, Diario de Cuyo — mar/abr/jun 2026
   - Declaraciones CEO Glencore Argentina, Expo Minera SJ, mayo 2026
 """
 
@@ -54,7 +56,7 @@ eventos = [
         'fecha':  'Ago 2024',
         'x':      0,
         'titulo': 'MOU\nLos Azules–YPF Luz',
-        'desc':   'Los Azules firma acuerdo\nde suministro renovable\nexclusivo con YPF Luz',
+        'desc':   'Los Azules firma acuerdo\nde suministro renovable\ncon YPF Luz: línea de AT\npropia conectada al SADI',
         'actor':  'Los Azules',
         'color':  '#E67E22',
         'y':      1,
@@ -72,47 +74,56 @@ eventos = [
         'fecha':  'Mar 2026',
         'x':      3,
         'titulo': 'Oposiciones\nformales',
-        'desc':   '8 actores presentan\nobjeciones: EPRE SJ,\nLos Azules, Municipios,\nLa Rioja, otros',
+        'desc':   '8+ actores objetan:\nEPRE SJ, Los Azules,\nBarrick, Gualcamayo,\nLa Rioja, municipios',
         'actor':  'Múltiples actores',
         'color':  '#8E44AD',
         'y':      1,
     },
     {
-        'fecha':  'Abr 2026',
+        'fecha':  '16 abr 2026',
         'x':      4.5,
         'titulo': 'ENRE Res.\n214/2026',
-        'desc':   'Corrección: excluye\nFilo del Sol. Solo\ncubre Josemaría\nFase 1 (260 MW)',
+        'desc':   'Fe de erratas: corrige\nRes. 79 y 165. Excluye\nFilo del Sol. Solo\nJosemaría Fase 1 (260 MW)',
         'actor':  'ENRE',
         'color':  '#D35400',
         'y':      -1,
     },
     {
-        'fecha':  'May 2026',
+        'fecha':  '24 abr 2026',
         'x':      6,
-        'titulo': 'CEO Glencore\nExpo Minera SJ',
-        'desc':   'Pérez de Solay critica\nel modelo de infra\npropia: "pierden\nel foco"',
-        'actor':  'Glencore',
-        'color':  '#27AE60',
+        'titulo': 'ENRE Res.\n219/2026',
+        'desc':   'Convoca la audiencia\npública (acceso 260 MW\n+ ampliación pedida\npor Transener/Vicuña)',
+        'actor':  'ENRE',
+        'color':  '#16A085',
         'y':      1,
     },
     {
         'fecha':  '3 jun 2026',
         'x':      8.8,
         'titulo': 'Audiencia\npública',
-        'desc':   'Se realiza la audiencia\npública por el acceso\ny las condiciones de\nuso de la línea',
+        'desc':   '13 expositores. SIN fallo\nde fondo. Vicuña pide\nprórroga de 30 días;\nel ENRE accede',
         'actor':  'ENRE / actores',
         'color':  '#7F8C8D',
         'y':      -1,
     },
+    {
+        'fecha':  '~jul 2026',
+        'x':      10.4,
+        'titulo': 'Resolución\nde fondo',
+        'desc':   'PENDIENTE al cierre\n(16 jun 2026). Riesgo de\njudicialización si no\nhay acuerdo de acceso',
+        'actor':  'ENRE',
+        'color':  '#C0392B',
+        'y':      1,
+    },
 ]
 
-fig, ax = plt.subplots(figsize=(18, 7))
+fig, ax = plt.subplots(figsize=(20, 7))
 
 # Línea de tiempo horizontal
 ax.axhline(y=0, color='#BDC3C7', lw=2.5, zorder=1)
 
 # Corregir x de cada evento para mayor espaciado
-x_posiciones = [0, 2.2, 3.8, 5.4, 7.0, 8.8]
+x_posiciones = [0, 1.85, 3.55, 5.25, 6.95, 8.65, 10.35]
 for ev, xp in zip(eventos, x_posiciones):
     ev['x'] = xp
 
@@ -140,7 +151,7 @@ for ev in eventos:
             ha='center', va='center',
             fontsize=7.5, color='#5D6D7E', style='italic')
 
-ax.set_xlim(-0.8, 9.8)
+ax.set_xlim(-0.8, 11.3)
 ax.set_ylim(-2.1, 2.1)
 ax.set_yticks([])
 ax.set_xticks([])
@@ -151,7 +162,7 @@ ax.set_title(
     fontsize=13, fontweight='bold', pad=15
 )
 ax.text(0.5, -0.08,
-        'Fuentes: ENRE (resoluciones 79, 165 y 214/2026), Tiempo de San Juan, Econojournal, Diario de Cuyo — feb/jun 2026',
+        'Fuentes: ENRE Res. 79, 165, 214 y 219/2026 (B.O. argentina.gob.ar / boletinoficial.gob.ar); Tiempo de San Juan, Acero y Roca, Diario de Cuyo — feb–jun 2026. Resolución de fondo pendiente al 16 jun 2026.',
         transform=ax.transAxes, ha='center', fontsize=7.5, color='#95A5A6', style='italic')
 
 plt.tight_layout()
