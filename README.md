@@ -99,8 +99,11 @@ analisis_sanjuan_energia/
 │   ├── 04_fix_gap_chart.py
 │   ├── 05_caso_500kv.py
 │   ├── 06_readme_log.py
-│   └── 07_proyeccion_demanda.py
-├── reports/                    # All output charts (PNG)
+│   ├── 07_proyeccion_demanda.py
+│   ├── 08_escenario_crecimiento_alto.py
+│   ├── 09_brecha_firme_dia_noche.py
+│   └── 10_escenario_bess.py
+├── reports/                    # All output charts (PNG) — 21 figures
 ├── logs/                       # Quality reports and decision logs (JSON)
 └── README.md
 ```
@@ -141,6 +144,9 @@ comes from the CAMMESA Annual Report Excel file.
 | `05_` | Audited data | 3 charts (05_01 to 05_03) | 500kV case study |
 | `06_` | — | README.md + project_log.json | Documentation |
 | `07_` | Audited data + model assumptions | 2 charts (07_01, 07_02) | Demand projection 2025–2040 + El Pachón sensitivity |
+| `08_` | Audited data + CAGR assumptions | 1 chart (08_01) | High-growth scenario (CAGR 3.75% vs 2%) |
+| `09_` | Audited data | 1 chart (09_01) | Firm night-generation gap (corrected 90% sensitivity) |
+| `10_` | Audited data + FC real (26.0%) | 1 chart (10_01) | BESS sizing for overnight gap |
 
 ### Key design decisions
 
@@ -309,6 +315,57 @@ plan is approximately 119 MW. With El Pachón at base (~600 MW, ~2038), total
 cluster demand reaches ~1,750 MW — none of which beyond Josemaría's 260 MW has
 a coordinated transmission solution.
 
+### High-growth scenario (script 08_)
+
+**`08_01_proyeccion_cagr_alto.png`**
+Comparison of provincial demand trajectories under two CAGR assumptions: the
+conservative baseline (+2%/yr, historical CAGR) versus a high-growth scenario
+(+3.75%/yr, reflecting accelerated industrial and residential load driven by
+mining-sector development). By 2030, the high-growth baseline reaches 796.5 MW
+vs. 658.5 MW in the conservative case — a 138 MW difference even before adding
+mining project demand. By 2036, the spread widens further (1,025.0 MW vs. 741.6 MW).
+This scenario quantifies the additional grid pressure if the mining boom drives
+broader provincial economic activity beyond the direct project loads.
+*Script output: 2030 high-CAGR provincial = 796.5 MW; 2036 = 1,025.0 MW.*
+
+### Firm night-generation gap (script 09_)
+
+**`09_01_brecha_dia_noche.png`**
+Time-series chart (2025–2036) of the overnight firm-generation gap: total
+electricity demand (provincial + mining) minus firm dispatchable capacity (~258 MW
+hydro + thermal). At night, when solar output is zero, the only supply available
+is firm capacity — and the mining cluster's flat 24/7 load makes this the binding
+constraint. By 2030, total overnight demand reaches 1,037.5 MW (658.5 MW provincial
++ 379.0 MW mining), producing a firm-generation deficit of 779.5 MW.
+
+**Sensitivity correction (v3.1):** A 90% load-factor sensitivity is applied
+*only* to the provincial component (which has demand-side variability), not to
+mining demand (which is a constant 24/7 process load). The corrected formula is:
+
+```
+déficit_90% = 658.5 × 0.90 + 379.0 − 258.0 = 713.6 MW
+```
+
+An earlier version incorrectly applied the 90% factor to the combined total
+(1,037.5 × 0.90 − 258.0 = 675.7 MW), underestimating the deficit by 37.9 MW.
+*Script output confirmed: Factor 90% correcto → déficit 2030 = 713.6 MW.*
+
+### BESS sizing scenario (script 10_)
+
+**`10_01_escenario_bess.png`**
+Battery Energy Storage System (BESS) sizing analysis for Los Azules' 119 MW
+overnight demand. The chart shows the required storage capacity to cover the
+project's load during the 13.5 nighttime hours (when solar output is unavailable),
+as a function of the solar capacity factor (FC). Using the real measured FC for
+San Juan (26.0%, derived from CAMMESA/EPSE data: 1,372,040 MWh / (603 MW × 8,760 h)),
+the required BESS is 119 MW × 13.5 h = **1,607 MWh**.
+
+Note: BESS sizing depends only on the overnight load and duration, not on the
+solar FC. The FC determines the daytime charge window but does not change the
+nighttime discharge requirement. Using FC = 26.0% (real) vs. the commonly cited
+30% (nominal) has no effect on the 1,607 MWh result.
+*Script output: FC real = 26.0%; BESS sizing = 1,607 MWh for 119 MW × 13.5 h.*
+
 ---
 
 ## Key Findings Summary
@@ -366,6 +423,18 @@ a coordinated transmission solution.
    *(Finding from script 07; entry timelines are model assumptions consistent
    with public company statements, not contractual commitments.)*
 
+8. **The overnight firm-generation deficit reaches 713.6 MW by 2030:**
+   Applying a 90% sensitivity factor only to the provincial component
+   (658.5 × 0.90 + 379.0 − 258.0), the corrected firm-generation deficit
+   at peak 2030 demand is 713.6 MW. Mining demand is excluded from the
+   sensitivity discount because it is a constant 24/7 process load with
+   no demand-side variability. *(Finding from script 09, v3.1 correction.)*
+
+9. **A BESS solution for Los Azules alone would require 1,607 MWh:**
+   Covering the 119 MW overnight load across 13.5 nighttime hours requires
+   1,607 MWh of battery storage, regardless of the solar capacity factor
+   (FC = 26.0% real, derived from CAMMESA/EPSE data). *(Finding from script 10.)*
+
 ---
 
 ## Tech Stack
@@ -405,6 +474,9 @@ python3 scripts/04_analisis_san_juan.py
 python3 scripts/05_caso_500kv.py
 python3 scripts/06_readme_log.py
 python3 scripts/07_proyeccion_demanda.py
+python3 scripts/08_escenario_crecimiento_alto.py
+python3 scripts/09_brecha_firme_dia_noche.py
+python3 scripts/10_escenario_bess.py
 ```
 
 ---
@@ -419,4 +491,4 @@ Argentina's mining and energy sectors.*
 
 ---
 
-*Last updated: June 2026*
+*v3.1 (16 scripts, 21 figures) — Last updated: June 2026*
