@@ -167,7 +167,9 @@ print("=" * 60 + "\n")
 #   (1) la mayoría es solar variable; solo ~258 MW son firmes (hidro + térmica), y
 #   (2) la transmisión al norte minero (Iglesia/Calingasta) es de solo ~90 MW.
 # Además, la generación provincial está en el centro/sur, lejos de las minas.
+# DATO: 861 MW — Potencia instalada San Juan (EPSE, feb. 2025). Sin CSV en repo.
 generacion_instalada = 861   # MW — EPSE feb. 2025 (70% solar · 27% hidro · 3% térmica)
+# DATO: 258 MW — Capacidad firme despachable (EPRE Anuario 2021). Sin CSV en repo.
 capacidad_firme      = 258   # MW — hidro + térmica (despachable 24/7)
 transmision_norte    = 90    # MW — línea 132kV ET Nueva San Juan → Rodeo (cuello de botella)
 

@@ -20,6 +20,13 @@ import json
 import os
 from datetime import datetime
 
+# NOTA SOBRE demanda_raw.csv:
+# El archivo data/raw/demanda_raw.csv contiene datos de Grandes Usuarios del MEM
+# (demanda en MWh por agente y año). Incluye valores negativos, entre ellos
+# -6.554 MWh y -1.757 MWh para San Juan en 2017 (posibles errores de medición
+# o ajustes de balance del MEM). Estos datos NO se usan para derivar la demanda
+# base del análisis (551 MW). Ese valor proviene del EPRE San Juan, Anuario 2021
+# (Potencia Operada máxima = 551,51 MW). Sin CSV en repo para ese dato.
 RUTA_EXCEL  = 'data/raw/estadisticas_2005_2025.xlsx'
 LOG_PATH    = 'logs/02_log_limpieza.json'
 CLEAN_LONG  = 'data/clean/matriz_nacional_long.csv'
