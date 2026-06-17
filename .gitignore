@@ -22,6 +22,12 @@ venv/
 # Jupyter
 .ipynb_checkpoints/
 
+# R
+.Rhistory
+*.Rhistory
+.RData
+.Rproj.user/
+
 # Distribución / packaging
 dist/
 build/
